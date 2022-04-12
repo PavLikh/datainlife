@@ -92,3 +92,8 @@ cli some_command - run scripts/cli.php some_command (migration, etc)
 cept some_command (cept generate:cept acceptance Test) - run codeception with params
 ```
 
+### 6. Проблемы совместимости
+
+> При использовании продукции от Apple на M1 Chip __mysql:5.7__ нужно заменить на __mariadb:10.5__
+>
+> __Файл__ *./containers/mysql/Dockerfile* FROM mysql:5.7 > FROM mariadb:10.5
