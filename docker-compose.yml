@@ -26,7 +26,7 @@ services:
     networks:
       default:
         aliases:
-          - project.localhost
+          - ${PROJECT_PREFIX}.localhost
 
   php:
     build:
