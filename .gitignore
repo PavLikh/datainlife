@@ -1,0 +1,13 @@
+.env
+/www/bitrix
+/www/upload
+/www/web.config
+*.log
+*.tar.gz
+*.tar
+*.zip
+.DS_Store
+.idea/
+*.swp
+/www/.DS_Store
+info.txt

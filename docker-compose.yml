@@ -42,6 +42,7 @@ services:
       - ./data/sessions:/var/www/sessions
     links:
       - mysql
+      - memcached
     restart: unless-stopped
     environment:
       APP_ENV: ${APP_ENV}
@@ -49,7 +50,7 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       MYSQL_HOST: ${MYSQL_HOST}
-      PROJECT_PREFIX: "$PROJECT_PREFIX"
+      PROJECT_PREFIX: ${PROJECT_PREFIX}
 
   mysql:
     ports:
